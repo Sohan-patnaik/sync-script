@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev:socket": "ts-node server/socketServer.ts",
+    "dev:socket": "ts-node --project tsconfig.server.json server/socketServer.ts",
     "dev:all": "concurrently \"npm run dev:socket\" \"npm run dev\"",
     "dev": "next dev",
     "build": "next build",
@@ -31,6 +31,7 @@
     "eslint-config-next": "16.2.0",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
